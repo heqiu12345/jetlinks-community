@@ -6,7 +6,7 @@ services:
     ports:
       - "6379:6379"
     volumes:
-      - "./data/redis:/data"
+      - "D:/Docker/data/redis:/data"
     command: redis-server --appendonly yes
     environment:
       - TZ=Asia/Shanghai
@@ -40,7 +40,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - "./data/pg:/var/lib/postgresql/data"
+      - "D:/Docker/data/pg:/var/lib/postgresql/data"
     environment:
       POSTGRES_PASSWORD: jetlinks
       POSTGRES_DB: jetlinks
